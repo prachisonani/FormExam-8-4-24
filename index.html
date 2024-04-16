@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>employe Detail</title>
+    <style>
+
+        #main{
+            width: 60%;
+            margin: auto;
+        }
+        #main2{
+            width: 80%;
+            margin: auto;
+            margin-top:40px ;
+        }
+        form{
+
+    width: 500px;
+    padding: 40px;
+    margin-top: 30px;
+
+
+}
+        
+        input,select {
+
+            padding: 10px;
+            background-color: transparent;
+            border: none;
+            border: 1px solid #0099ff;
+            display: block;
+            width: 85%;
+            margin: auto;
+            color: #000000;
+            letter-spacing: 1px;
+            font-size: 12px;
+        }
+
+        input:hover {
+            box-shadow: 0 0 10px #0099ff;
+        }
+
+        button {
+            display: block;
+            padding: 10px;
+            width: 95%;
+            margin: auto;
+            margin-top: 30px;
+            background-color: red;
+            color: white;
+            border: none;
+        }
+        button:hover{ background-color: rgb(226, 36, 3);}
+        
+
+select{
+    width: 90%;
+    color: black;
+
+}
+.btn{
+    width: 90%;
+    color:white;
+    border: 2px solid black;
+    text-align: center;
+    padding-left: 30px;
+    background-color: #008DDA;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    } 
+.btn:hover
+{
+    background-color: #01a3fa;
+}
+
+/* table */
+#photo{
+
+    height: 20px;
+    width: 20px;
+}
+table{
+
+
+    text-transform:capitalize;
+
+}
+.del{
+        color: white;
+        font-weight: 900;
+        margin-top: 42px;
+        border: none;
+        background-color: red;
+        font-size: 18px;
+        padding: 20px;
+
+}
+tr td{
+    font-size: 20px;
+    padding: 20px;
+   
+    border: 2px solid rgba(0, 0, 0, 0.219);
+}
+tr td:hover{
+
+    border: 2px solid rgba(0, 0, 0, 0.445);
+}
+.color{
+
+    font-size: 30px;
+    color:#008DDA;
+    font-weight: 900;
+    border: 2px solid rgba(0, 0, 0, 0.219);
+
+}
+.color:hover{
+    border: 2px solid rgba(0, 0, 0, 0.219);
+
+}
+
+img{
+    width:110px;
+}
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <form id="form" style="text-align: center;">
+
+            <input type="number" id="id" placeholder="id" required>
+<br>
+            <input type="text" id="name" placeholder="name" required>
+            <br>
+
+            <input type="url" placeholder="img" id="img" required>
+            <br>
+            
+            <input type="text" id="mobile" placeholder="mobile" required>
+            <br>
+            
+
+            <select name="course" id="course" style="padding: 10px;" required>
+                <option value="html">html</option>
+                <option value="css">css</option>
+                <option value="java">java</option>
+                <option value="node">node</option>
+            </select>
+            <br>
+            
+            <input type="text" id="city" placeholder="city" required>
+            <br>
+            <input type="submit" class="btn">
+
+        </form>
+
+    </div>
+
+<div id="main2">
+    <table>
+            <tr  class="color">
+                <td>id</td>
+                <td>name</td>
+                <td id="photo">img</td>
+                <td>mobile</td>
+                <td>course</td>
+                <td>city</td>
+                
+                <td style="color: red;" id="delete">Delete all</td>
+
+            </tr>
+
+            <tbody id="data"></tbody>
+
+    </table>
+</div>
+
+
+
+</body>
+<script src="./index.js"></script>
+
+</html>
